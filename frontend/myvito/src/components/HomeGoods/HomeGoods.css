@@ -1,0 +1,65 @@
+.homegoods {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.homegoods__title {
+    font-size: 30px;
+    margin: 0 0 20px 0;
+}
+
+.homegoods__goodlist {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 30px;
+}
+
+.homegoods__search {
+    width: 40%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: 2px black solid;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.homegoods__search:focus {
+    outline: 1px white solid;
+}
+
+.homegoods__search::placeholder {
+    text-align: center;
+}
+
+.homegoods__searchform {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.throw {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 100px;
+    background-color: white;
+    color: black;
+    top: 40px;
+    z-index: 3;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .15);
+    overflow-y: scroll;
+}
+
+.throw__listitem {
+    cursor: pointer;
+    border-bottom: 1px solid grey;
+    width: 100%;
+    text-align: left;
+}

@@ -1,0 +1,48 @@
+.header {
+    width: 100%;
+    margin: 0 auto 40px auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+    padding: 12px 40px;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.header__nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header__button {
+    align-items: center;
+    justify-content: center;
+    border: none;
+    display: flex;
+    background: rgb(38, 56, 69);
+    height: 60px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: opacity .1s linear;
+}
+
+.header__button:hover {
+    opacity: .6;
+}
+
+.header__button_l {
+    width: 140px;
+    border-radius: 20px;
+}
+
+.header__button_s {
+    width: 100px;
+    border-radius: 20px;
+    text-wrap: wrap;
+}

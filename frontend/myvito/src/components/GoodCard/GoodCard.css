@@ -1,0 +1,99 @@
+.good {
+  position: relative;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px 10px 10px;
+  box-sizing: border-box;
+  background-color: black;
+  border-radius: 20px;
+  transition: background-color 0.5s ease-in-out;
+}
+.good:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  z-index: 1;
+  transition: background-color 0.1s ease-in-out;
+}
+.good:hover:before {
+  background-color: midnightblue;
+}
+
+.good__picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.good__name {
+  font-size: 16px;
+  margin: 0;
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 2;
+}
+
+.good__address {
+  font-size: 12px;
+  margin-bottom: 10px;
+  z-index: 2;
+}
+
+.good__price {
+  display: flex;
+  align-self: flex-start;
+  padding-left: 16px;
+  color: greenyellow;
+  z-index: 2;
+}
+
+.good__info-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.good__like {
+  padding-right: 20px;
+  z-index: 2;
+  background-image: url("../../images/like.svg");
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.good__like:hover {
+  transform: scale(1.4);
+}
+
+.good__tocart {
+  border-radius: 8px;
+  border: none;
+  font-size: 11px;
+  background-image: url("../../images/cart.svg");
+  cursor: pointer;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 35px;
+  background-color: white;
+}
